@@ -112,7 +112,7 @@ jobs:
         run: ./vendor/bin/phpunit --coverage-clover=coverage.xml
 
       - name: Upload coverage reports
-        uses: codecov/codecov-action@v4
+        uses: codecov/codecov-action@v5
         if: always()
         continue-on-error: true
         with:
