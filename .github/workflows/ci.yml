@@ -14,7 +14,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest]
-        php-version: ['8.1', '8.2', '8.3', '8.4']
+        php-version: ['8.2', '8.3', '8.4']
         include:
           - os: macos-latest
             php-version: '8.3'
@@ -31,8 +31,6 @@ jobs:
           php-version: ${{ matrix.php-version }}
           coverage: none
           tools: composer:v2
-        env:
-          fail-fast: true
 
       - name: Get Composer cache directory
         id: composer-cache
