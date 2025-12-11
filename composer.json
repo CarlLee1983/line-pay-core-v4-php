@@ -1,0 +1,66 @@
+{
+    "name": "carllee/line-pay-core-v4",
+    "description": "Core library for LINE Pay API V4 SDK - Provides shared utilities, base client, types, and error handling for building LINE Pay integrations",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Carl Lee",
+            "homepage": "https://github.com/CarlLee1983"
+        }
+    ],
+    "keywords": [
+        "line-pay",
+        "line",
+        "payment",
+        "sdk",
+        "core",
+        "v4",
+        "api",
+        "taiwan",
+        "japan",
+        "thailand"
+    ],
+    "homepage": "https://github.com/CarlLee1983/line-pay-core-v4-php",
+    "support": {
+        "issues": "https://github.com/CarlLee1983/line-pay-core-v4-php/issues",
+        "source": "https://github.com/CarlLee1983/line-pay-core-v4-php"
+    },
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "ext-openssl": "*",
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0",
+        "phpstan/phpstan": "^1.10",
+        "friendsofphp/php-cs-fixer": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "LinePay\\Core\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "LinePay\\Core\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test:coverage": "phpunit --coverage-html=coverage",
+        "lint": "php-cs-fixer fix --dry-run --diff",
+        "lint:fix": "php-cs-fixer fix",
+        "analyze": "phpstan analyse src tests --level=max"
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
