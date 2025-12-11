@@ -13,12 +13,15 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-        php-version: ['8.1', '8.2', '8.3']
+        os: [ubuntu-22.04, macos-latest, windows-latest]
+        php-version: ['8.1', '8.2', '8.3', '8.4']
+        exclude:
+          - os: windows-latest
+            php-version: '8.4'
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -49,16 +52,16 @@ jobs:
 
   lint:
     name: Code Style Check
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.1'
+          php-version: '8.2'
           extensions: json, openssl
           tools: composer:v2, php-cs-fixer
 
@@ -70,16 +73,16 @@ jobs:
 
   analyze:
     name: Static Analysis
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.1'
+          php-version: '8.2'
           extensions: json, openssl
           tools: composer:v2
 
@@ -91,11 +94,11 @@ jobs:
 
   coverage:
     name: Test Coverage
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -122,16 +125,16 @@ jobs:
 
   security:
     name: Security Audit
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.1'
+          php-version: '8.2'
           tools: composer:v2
 
       - name: Install dependencies
@@ -142,7 +145,7 @@ jobs:
 
   all-checks:
     name: All Checks Passed
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     needs: [test, lint, analyze, security]
     if: always()
     
