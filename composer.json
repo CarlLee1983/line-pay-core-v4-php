@@ -49,8 +49,8 @@
         }
     },
     "scripts": {
-        "test": "phpunit",
-        "test:coverage": "phpunit --coverage-html=coverage",
+        "test": "phpunit --no-coverage",
+        "test:coverage": "@php -r \"exit(extension_loaded('xdebug') || extension_loaded('pcov') ? 0 : 1);\" && phpunit --coverage-html=coverage || echo 'No coverage driver. Running without coverage.' && phpunit --no-coverage",
         "lint": "php-cs-fixer fix --dry-run --diff",
         "lint:fix": "php-cs-fixer fix",
         "analyze": "phpstan analyse src tests --level=max"
