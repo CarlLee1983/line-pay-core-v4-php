@@ -3,7 +3,6 @@
     "description": "Core library for LINE Pay API V4 SDK - Provides shared utilities, base client, types, and error handling for building LINE Pay integrations",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.0",
     "authors": [
         {
             "name": "Carl Lee",
