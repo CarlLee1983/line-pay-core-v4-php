@@ -131,18 +131,19 @@ final class LinePayUtils
             $transactionId = $transactionId[0] ?? null;
         }
 
-        if ($transactionId === null || $transactionId === '') {
+        // Ensure we have a valid scalar value
+        if ($transactionId === null || (is_string($transactionId) && $transactionId === '')) {
             throw new \InvalidArgumentException('Missing transactionId in callback query');
         }
 
-        $result = ['transactionId' => (string) $transactionId];
+        $result = ['transactionId' => is_scalar($transactionId) ? (string) $transactionId : ''];
 
         $orderId = $query['orderId'] ?? null;
         if (is_array($orderId)) {
             $orderId = $orderId[0] ?? null;
         }
 
-        if ($orderId !== null && $orderId !== '') {
+        if ($orderId !== null && $orderId !== '' && is_scalar($orderId)) {
             $result['orderId'] = (string) $orderId;
         }
 

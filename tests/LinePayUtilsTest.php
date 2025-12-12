@@ -86,9 +86,8 @@ class LinePayUtilsTest extends TestCase
 
     public function testValidateTransactionIdValid(): void
     {
+        $this->expectNotToPerformAssertions();
         LinePayUtils::validateTransactionId('1234567890123456789');
-
-        $this->assertTrue(true);
     }
 
     public function testBuildQueryStringWithParams(): void
