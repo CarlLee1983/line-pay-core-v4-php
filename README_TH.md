@@ -78,7 +78,7 @@ composer require carllee/line-pay-core-v4
 > ⚠️ **หมายเหตุ:** นี่คือ **core library** ที่ออกแบบมาเพื่อใช้เป็น dependency
 > 
 > **นักพัฒนาส่วนใหญ่ควรใช้ SDKs ที่พร้อมใช้:**
-> - สำหรับ online payments (web/app checkout): [`carllee/line-pay-online-v4`](https://github.com/CarlLee1983/line-pay-online-v4-php)
+> - สำหรับ online payments (web/app checkout): [`carllee/line-pay-online-v4`](https://github.com/CarlLee1983/line-pay-online-v4)
 > - สำหรับ offline payments (POS/Kiosk): [`carllee/line-pay-offline-v4`](https://github.com/CarlLee1983/line-pay-offline-v4-php)
 >
 > **ใช้แพ็คเกจนี้โดยตรงเฉพาะเมื่อ**คุณต้องการสร้าง custom LINE Pay client ที่มีพฤติกรรมเฉพาะ

@@ -78,7 +78,7 @@ composer require carllee/line-pay-core-v4
 > ⚠️ **注意：** 這是一個**核心程式庫**，設計作為依賴套件使用。
 > 
 > **大多數開發者應該使用現成的 SDK：**
-> - 線上付款（網頁/App 結帳）：[`carllee/line-pay-online-v4`](https://github.com/CarlLee1983/line-pay-online-v4-php)
+> - 線上付款（網頁/App 結帳）：[`carllee/line-pay-online-v4`](https://github.com/CarlLee1983/line-pay-online-v4)
 > - 線下付款（POS/Kiosk）：[`carllee/line-pay-offline-v4`](https://github.com/CarlLee1983/line-pay-offline-v4-php)
 >
 > **只有當您需要**建構具有特殊行為的客製化 LINE Pay 客戶端時，才直接使用此套件。

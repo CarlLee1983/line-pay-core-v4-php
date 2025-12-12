@@ -78,7 +78,7 @@ composer require carllee/line-pay-core-v4
 > ⚠️ **注意:** これは依存パッケージとして使用される**コアライブラリ**です。
 > 
 > **ほとんどの開発者は、すぐに使える SDK を使用してください:**
-> - オンライン決済（Web/App チェックアウト）: [`carllee/line-pay-online-v4`](https://github.com/CarlLee1983/line-pay-online-v4-php)
+> - オンライン決済（Web/App チェックアウト）: [`carllee/line-pay-online-v4`](https://github.com/CarlLee1983/line-pay-online-v4)
 > - オフライン決済（POS/Kiosk）: [`carllee/line-pay-offline-v4`](https://github.com/CarlLee1983/line-pay-offline-v4-php)
 >
 > **このパッケージを直接使用するのは**、特殊な動作を持つカスタム LINE Pay クライアントを構築する必要がある場合のみです。
