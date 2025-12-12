@@ -5,7 +5,8 @@
 
 LINE Pay API V4 SDK 核心庫 - 提供共用工具、基礎客戶端、型別定義和錯誤處理，用於建立 LINE Pay 整合。
 
-繁體中文 | [English](./README.md)
+**🌐 Language / 語言 / 言語 / ภาษา:**
+[English](./README.md) | [繁體中文](./README_ZH.md) | [日本語](./README_JA.md) | [ภาษาไทย](./README_TH.md)
 
 ## 概述
 
@@ -131,8 +132,8 @@ try {
 
 ## 相關套件
 
-- `carllee/line-pay-online-v4` - LINE Pay Online API V4 客戶端（即將推出）
-- `carllee/line-pay-offline-v4` - LINE Pay Offline API V4 客戶端（即將推出）
+- [`carllee/line-pay-online-v4`](https://github.com/CarlLee1983/line-pay-online-v4-php) - LINE Pay Online API V4 客戶端
+- [`carllee/line-pay-offline-v4`](https://github.com/CarlLee1983/line-pay-offline-v4-php) - LINE Pay Offline API V4 客戶端
 
 ## 開發
 

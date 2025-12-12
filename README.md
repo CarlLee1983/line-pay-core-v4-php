@@ -5,7 +5,8 @@
 
 Core library for LINE Pay API V4 SDK - Provides shared utilities, base client, types, and error handling for building LINE Pay integrations.
 
-[繁體中文](./README_ZH.md) | English
+**🌐 Language / 語言 / 言語 / ภาษา:**
+[English](./README.md) | [繁體中文](./README_ZH.md) | [日本語](./README_JA.md) | [ภาษาไทย](./README_TH.md)
 
 ## Overview
 
@@ -131,8 +132,8 @@ try {
 
 ## Related Packages
 
-- `carllee/line-pay-online-v4` - LINE Pay Online API V4 client (coming soon)
-- `carllee/line-pay-offline-v4` - LINE Pay Offline API V4 client (coming soon)
+- [`carllee/line-pay-online-v4`](https://github.com/CarlLee1983/line-pay-online-v4-php) - LINE Pay Online API V4 client
+- [`carllee/line-pay-offline-v4`](https://github.com/CarlLee1983/line-pay-offline-v4-php) - LINE Pay Offline API V4 client
 
 ## Development
 
